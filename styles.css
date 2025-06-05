@@ -12,11 +12,13 @@
 --stone-600: #57534e;
 --stone-700: #44403c;
 --stone-800: #292524;
+
 --rose-50: #fff1f2;
---rose-500: #f87171;
---rose-600: #ef4444;
---rose-700: #dc2626;
---rose-800: #b91c1c;
+--rose-500: #f43f5e;
+--rose-600: #e11d48;
+--rose-700: #be123c;
+--rose-800: #9f1239;
+
 --blue-500: #3b82f6;
 --blue-600: #2563eb;
 
@@ -26,8 +28,8 @@
 --color-text-primary: var(--stone-800);
 --color-text-secondary: var(--stone-600);
 --color-text-button: var(--rose-50);
---color-bg-button: var(--rose-700);
---color-bg-button-hover: var(--rose-600);
+--color-bg-button: var(--rose-600);
+--color-bg-button-hover: var(--rose-500);
 --color-text-link: var(--blue-600);
 
 --font-serif: 'Fraunces', serif;
