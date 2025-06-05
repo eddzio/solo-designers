@@ -48,6 +48,7 @@
 --font-line-height-title: 0.8;
 --font-weight-normal: 400;
 --font-weight-bold: 700;
+--font-letter-spacing: -0.025em;
 
 --shadow-button: 0 8px 16px 0 rgba(248, 113, 113, 0.6), 0 1.5px 8px 0 rgba(239, 68, 68, 0.25);
 
@@ -115,7 +116,7 @@ p {
     max-width: 1000px;
     color: var(--color-text-secondary);
     line-height: 1.33;
-    letter-spacing: -0.012em;
+    letter-spacing: var(--font-letter-spacing);
     font-weight: 500;
 }
 
@@ -175,6 +176,7 @@ a {
     font-size: var(--font-size-base);
     background-color: var(--color-bg-button);
     color: var(--color-text-button);
+    letter-spacing: var(--font-letter-spacing);;
     padding: 12px 32px;
     border-radius: 999px;
     border: none;
