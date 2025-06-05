@@ -14,6 +14,7 @@
 --stone-800: #292524;
 
 --rose-50: #fff1f2;
+--rose-100: #ffe4e6;
 --rose-500: #f43f5e;
 --rose-600: #e11d48;
 --rose-700: #be123c;
@@ -46,17 +47,23 @@
 
 --shadow-button: 0 8px 16px 0 rgba(248, 113, 113, 0.6), 0 1.5px 8px 0 rgba(239, 68, 68, 0.25);
 
+--color-highlight: var(--rose-100);
+--color-text-highlight: var(--rose-800);
+
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
---color-bg: var(--stone-800);
---color-bg-secondary: var(--stone-700);
---color-text-primary: var(--stone-50);
---color-text-secondary: var(--stone-500);
---color-text-button: var(--rose-50);
+        --color-bg: var(--stone-800);
+        --color-bg-secondary: var(--stone-700);
+        --color-text-primary: var(--stone-50);
+        --color-text-secondary: var(--stone-500);
+        --color-text-button: var(--rose-50);
 
---shadow-button: 0 8px 16px 0 rgba(248, 113, 113, 0.1), 0 1.5px 8px 0 rgba(239, 68, 68, 0.1);
+        --shadow-button: 0 8px 16px 0 rgba(248, 113, 113, 0.1), 0 1.5px 8px 0 rgba(239, 68, 68, 0.1);
+
+        --color-highlight: var(--rose-800);
+        --color-text-highlight: var(--rose-50);
     }
 }
 
@@ -103,7 +110,14 @@ p {
     margin: 0 0 8px 0;
     max-width: 1000px;
     color: var(--color-text-secondary);
-    line-height: var(--font-line-height-base);
+    line-height: 1.33;
+    letter-spacing: -0.012em;
+    font-weight: 500;
+}
+
+::selection {
+  background-color: var(--color-highlight); /* new highlight background color */
+  color: var(--color-text-highlight);               /* new highlight text color */
 }
 
 
