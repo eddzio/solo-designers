@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
 
 --stone-50: #fafaf9;
@@ -49,9 +55,16 @@
 --color-text-button: var(--rose-50);
 
 --shadow-button: 0 8px 16px 0 rgba(248, 113, 113, 0.1), 0 1.5px 8px 0 rgba(239, 68, 68, 0.1);
+    }
+}
 
-
-
+@media screen and (max-width: 600px) {
+    :root {
+        --font-size-base: 20px;
+        --font-line-height-base: 26px;
+        --font-size-lg: 24px;
+        --font-size-title: 64px;
+        --font-line-height-title: 1;
     }
 }
 
@@ -86,6 +99,7 @@ h2 {
 p {
     font-size: var(--font-size-base);
     margin: 0 0 8px 0;
+    max-width: 1000px;
     color: var(--color-text-secondary);
     line-height: var(--font-line-height-base);
 }
@@ -110,6 +124,7 @@ p {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
